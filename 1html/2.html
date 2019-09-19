@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<h1>标题</h1>
+	<p>段落标签</p>
+
+	sublime: 做网页和什么软件没有任何关系，所以做网页不等于DreamWeaver。Sublime非常快、方便、小巧、插件多，所以我们使用sublime。sublime中有常用的快捷键。
+		新建文件 	ctrl+n
+		保存 		ctrl+s
+		调整字号 	ctrl+滚轮
+		上移当前行	ctrl+shift+↑
+		复制当前行 	ctrl+shift+d
+		删除当前行 	ctrl+shift+k
+
+	name就是“名字”的意思，content是“内容”的意思。
+	也就是说，我们定义了一个名字是“Description”（描述）的meta。内容是网易是中国领先
+		<meta name="Keywords" content="网易,邮箱,游戏,新闻,体育,娱乐,女性,亚运,论坛,短信" />
+
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<meta name="Keywords" content="牛逼，很牛逼，特别牛逼" />
+		<meta name="Description" content="网易是中国领先的互联网技术公司，为用户提供免费邮箱、游戏、搜索引擎服务，开设新闻、娱乐、体育等30多个内容频道，及博客、视频、论坛等互动交流，网聚人的力量。" />
+
+页面上可以插入图片，能够插入的图片类型是：jpg(jpeg)、gif、png、bmp。类型和类型之间有什么区别，css课上讲。
+不能往网页中插入的图片格式是：psd、ai 插入方法：
+	<img src="baby.jpg"  />
+img是英语image“图片”的简写
+src 是英语source“资源”的简写，千万不要写成scr。
+src是img标签的属性，baby.jpg是这个属性的值。
+	<img src="baby.jpg" alt="巴黎结婚照" />
+alt是英语alternate“替代”的意思，就表示不管因为什么原因，当这个图片无法被显示的时候，出现的替代文字（有的浏览器不支持）。
+相对路径：	<img src="images/baby.jpg" alt="巴黎结婚照" />
+如果图片在浅一层的文件夹中：<img src="../3.jpg" alt="" />
+如果是上两级：	<img src="../../shizi.jpg" alt="" />
+
+超级链接
+	<a href="1.html">结婚照</a>
+	<a href="09_img.html" title="很好看哦">结婚照</a>
+	<a href="09_img.html" title="很好看哦" target="_blank">结婚照</a>
+	blank就是“空白”的意思，就表示新建一个空白窗口。为毛有一个_ ，就是规定，没啥好解释的。
+	<a href="1.html" title="悬停文本" target="_blank">链接的内容</a>
+
+	分清楚img和a标签的各自的属性：
+	<img src="1.jpg" />
+	<a href="1.html"></a>
+
+锚点用name属性来设置，一个a标签如果name属性（或者id属性），那么就是页面的一个锚点。
+	<a name="wdzp">我的作品</a>
+或者：
+	<a id="wdzp">我的作品</a>
+
+	<a href="#wdzp">点击我就查看我的作品</a>
+
+11_页面内锚点
+	<a href="#gzjy">点击我就查看工作经验</a>
+	<a href="#wdzp">点击我就查看我的作品</a>
+
+	<h2><a id="gzjy">工作经验</a></h2><p></p>
+	<h2><a name="wdzp">我的作品</a></h2><p></p>
+
+12_跨页面锚点
+	<a href="11_页面内锚点.html#gzjy">查看小明同学的工作经验</a>
+
+a是一个文本级的标签
+比如一个段落中的所有文字都能够被点击，那么应该：
+p包裹a：
+	<p>
+		<a href="">段落段落段落段落段落段落</a>
+	</p>
+而不是a包裹p：
+	<a href="">
+		<p>
+			段落段落段落段落段落段落
+		</p>
+	</a>
+
+
+面试题：代码在doc/work/myweb/index.html,图片在doc/photo/q.png
+<img src="../../photo/1.png" />
+
+单词
+style	样式
+
+color	字体颜色
+background-color	背景颜色
+font-size	字号
+font-weight	字体粗细
+font-family	字体
+font-style	字型
+text-align	文字对齐
+text-decoration	文字修饰
+
+underline	下划线
+none	无
+italic	斜体
+normal	正常
+
+red	红色
+blue	蓝色
+green	绿色
+yellow	黄色
+pink	粉色
+orange	橙色
+black	黑色
+white	白色
+gray	灰色	
+====================================================
+top	上
+bottom 下
+left	左
+right 右
+center	中
+
+width	宽度
+height	高度
+padding	内边距
+margin	外边距
+border	边框
+solid	实线
+dashed	虚线
+line-height	行高
+
+</body>
+</html>
